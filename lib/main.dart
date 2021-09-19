@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:quizfulauihapp/question.dart';
 
 main() => runApp(MyApp());
 
@@ -23,19 +24,7 @@ class _MyAppState extends State<MyApp> {
           title: Text("Quiz App"),
         ),
         body: Container(
-          margin: EdgeInsets.all(10),
-          color: Colors.limeAccent,
-          width: double.infinity,
-          child: Column(
-            children: <Widget>[
-              Text(
-                _question[1],
-                // 'What\'s your favorite color ?',
-                style: TextStyle(fontSize: 20),
-                textAlign: TextAlign.center,
-              )
-            ],
-          ),
+         child:  Question("question ?"),
         ),
       ),
     );

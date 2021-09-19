@@ -6,7 +6,7 @@ class Question extends StatelessWidget {
 
   // const Question ({Key? key}) : super(key: key);
 
-  final questionText;
+  final String questionText;
 
   Question(this.questionText);
   @override
@@ -19,7 +19,7 @@ class Question extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Text(
-            _question[1],
+            questionText,
             // 'What\'s your favorite color ?',
             style: TextStyle(fontSize: 20),
             textAlign: TextAlign.center,

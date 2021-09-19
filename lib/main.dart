@@ -24,7 +24,7 @@ class _MyAppState extends State<MyApp> {
           title: Text("Quiz App"),
         ),
         body: Container(
-         child:  Question("question ?"),
+         child:  Question(_question[0] ),
         ),
       ),
     );

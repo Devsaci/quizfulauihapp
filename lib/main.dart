@@ -4,17 +4,17 @@ import 'package:flutter/material.dart';
 main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
-
-
   @override
   State<MyApp> createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
- var question = [
+  final int _questionIndex = 0;
+  final _question = [
     'What\'s your favorite color ?',
     'What\'s your favorite animal ?',
   ];
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             children: <Widget>[
               Text(
-                question[0],
+                _question[1],
                 // 'What\'s your favorite color ?',
                 style: TextStyle(fontSize: 20),
                 textAlign: TextAlign.center,

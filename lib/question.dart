@@ -3,10 +3,28 @@
 import 'package:flutter/material.dart';
 
 class Question extends StatelessWidget {
-  const Question ({Key? key}) : super(key: key);
 
+  // const Question ({Key? key}) : super(key: key);
+
+  String questionText;
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+
+      margin: EdgeInsets.all(10),
+      color: Colors.limeAccent,
+      width: double.infinity,
+      child: Column(
+        children: <Widget>[
+          Text(
+            _question[1],
+            // 'What\'s your favorite color ?',
+            style: TextStyle(fontSize: 20),
+            textAlign: TextAlign.center,
+          )
+        ],
+      ),
+
+    );
   }
 }

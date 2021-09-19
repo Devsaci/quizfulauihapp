@@ -9,7 +9,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final int _questionIndex = 0;
+  int _questionIndex = 0;
   final _question = [
     'What\'s your favorite color ?',
     'What\'s your favorite animal ?',

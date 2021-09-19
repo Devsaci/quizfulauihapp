@@ -16,8 +16,12 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return  MaterialApp(
       home:Scaffold(
-        appBar: AppBar(),
-        body: Container(),
+        appBar: AppBar(
+          title:  Text("Quiz App"),
+        ),
+        body: Container(
+          child: Column(),
+        ),
 
       ),
     );

@@ -24,7 +24,12 @@ class _MyAppState extends State<MyApp> {
           title: Text("Quiz App"),
         ),
         body: Container(
-         child:  Question(_question[0] ),
+         child:  Column(
+           children: [
+             Question(_question[0] ),
+             RaisedButton(onPressed: null, child: Text("Answer 1"))
+           ],
+         ),
         ),
       ),
     );

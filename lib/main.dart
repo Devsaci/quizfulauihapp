@@ -1,10 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-main() => runApp(const MyApp());
-
+main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
 
 
   @override
@@ -12,21 +11,32 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+ var question = [
+    'What\'s your favorite color ?',
+    'What\'s your favorite animal ?',
+  ];
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      home:Scaffold(
+    return MaterialApp(
+      home: Scaffold(
         appBar: AppBar(
-          title:  Text("Quiz App"),
+          title: Text("Quiz App"),
         ),
         body: Container(
+          margin: EdgeInsets.all(10),
+          color: Colors.limeAccent,
+          width: double.infinity,
           child: Column(
-            children:  const <Widget>[
-              Text('What\'s your favorite color?')
+            children: <Widget>[
+              Text(
+                question[0],
+                // 'What\'s your favorite color ?',
+                style: TextStyle(fontSize: 20),
+                textAlign: TextAlign.center,
+              )
             ],
           ),
         ),
-
       ),
     );
   }

@@ -20,7 +20,11 @@ class _MyAppState extends State<MyApp> {
           title:  Text("Quiz App"),
         ),
         body: Container(
-          child: Column(),
+          child: Column(
+            children:  const <Widget>[
+              Text('Whats your favorite color?')
+            ],
+          ),
         ),
 
       ),

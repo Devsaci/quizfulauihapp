@@ -17,6 +17,7 @@ class _MyAppState extends State<MyApp> {
     return  MaterialApp(
       home:Scaffold(
         appBar: AppBar(),
+        body: Container(),
 
       ),
     );

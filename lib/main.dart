@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:quizfulauihapp/answer.dart';
 import 'package:quizfulauihapp/question.dart';
 
 main() => runApp(MyApp());
@@ -27,24 +28,25 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             children: [
               Question(_question[0]),
-              RaisedButton(
-                onPressed: () {},
-                child:  Text(
-                  "Answer 1", style: TextStyle(fontSize: 25),
-                ),
-                color: Colors.red,
-                textColor: Colors.white,
-
-              ),
-              RaisedButton(
-                onPressed: () {},
-                child:  Text(
-                  "Answer 2", style: TextStyle(fontSize: 25),
-                ),
-                color: Colors.red,
-                textColor: Colors.white,
-
-              ),
+              Answer()
+              // RaisedButton(
+              //   onPressed: () {},
+              //   child:  Text(
+              //     "Answer 35", style: TextStyle(fontSize: 25),
+              //   ),
+              //   color: Colors.red,
+              //   textColor: Colors.white,
+              //
+              // ),
+              // RaisedButton(
+              //   onPressed: () {},
+              //   child:  Text(
+              //     "Answer 36", style: TextStyle(fontSize: 25),
+              //   ),
+              //   color: Colors.red,
+              //   textColor: Colors.white,
+              //
+              // ),
             ],
           ),
         ),

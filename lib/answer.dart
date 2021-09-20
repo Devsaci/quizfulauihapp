@@ -10,7 +10,16 @@ class Answer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: ,
+      width: double.infinity,
+      child: RaisedButton(
+        onPressed: () {},
+        child:  Text(
+          "Answer 1", style: TextStyle(fontSize: 25),
+        ),
+        color: Colors.red,
+        textColor: Colors.white,
+
+      ),
 
     );
   }

@@ -13,14 +13,14 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   int _questionIndex = 0;
 
-  void answerQuestion(){
-if(_questionIndex == 1){
-  _questionIndex = -1;
-}
+  void answerQuestion() {
+    if (_questionIndex == 1) {
+      _questionIndex = -1;
+    }
     setState(() {
-      _questionIndex +=1;
+      _questionIndex += 1;
     });
-    print( _questionIndex);
+    print(_questionIndex);
     print("answer Chosen");
   }
 
@@ -40,9 +40,9 @@ if(_questionIndex == 1){
           child: Column(
             children: [
               Question(_question[_questionIndex]),
-              Answer( answerQuestion, "Answer 1"),
-              Answer( answerQuestion, "Answer 2"),
-              Answer( answerQuestion, "Answer 3"),
+              Answer(answerQuestion, "Answer 1"),
+              Answer(answerQuestion, "Answer 2"),
+              Answer(answerQuestion, "Answer 3"),
             ],
           ),
         ),

@@ -24,7 +24,7 @@ class _MyAppState extends State<MyApp> {
     print("answer Chosen");
   }
 
-  final _question = [
+  final List<Map<String, Object>> _question = [
     {
       'questionText': 'What\'s your favorite color ?',
       'answers': [

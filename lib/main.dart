@@ -27,10 +27,23 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             children: [
               Question(_question[0]),
-              RaisedButton(onPressed: () {},
-                child: Text("Answer 1",),
+              RaisedButton(
+                onPressed: () {},
+                child:  Text(
+                  "Answer 1", style: TextStyle(fontSize: 25),
+                ),
                 color: Colors.red,
-                  textColor: Colors.white,
+                textColor: Colors.white,
+
+              ),
+              RaisedButton(
+                onPressed: () {},
+                child:  Text(
+                  "Answer 2", style: TextStyle(fontSize: 25),
+                ),
+                color: Colors.red,
+                textColor: Colors.white,
+
               ),
             ],
           ),

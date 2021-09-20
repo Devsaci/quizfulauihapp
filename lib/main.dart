@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
   }
 
   final _question = [
-    {},
+    {'':''},
 
     'What\'s your favorite color ?',
     'What\'s your favorite animal ?',

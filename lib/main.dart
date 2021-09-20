@@ -56,6 +56,10 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             children: [
               Question(_question[_questionIndex]['questionText'].toString()),
+
+              ...(_question[_questionIndex]['answers'] as List<String>).map((answerChosen){
+
+              }).toList(),
               Answer(answerQuestion, "Answer 1"),
               Answer(answerQuestion, "Answer 2"),
               Answer(answerQuestion, "Answer 3"),

@@ -23,7 +23,6 @@ class Answer extends StatelessWidget {
         ),
         color: Colors.red,
         textColor: Colors.white,
-
       ),
 
     );

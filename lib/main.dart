@@ -28,9 +28,9 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             children: [
               Question(_question[0]),
-              Answer(),
-              Answer(),
-              Answer(),
+              Answer( (){}, "Answer 1"),
+              Answer( (){}, "Answer 2"),
+              Answer( (){}, "Answer 3"),
             ],
           ),
         ),

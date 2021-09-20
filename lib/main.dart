@@ -14,7 +14,9 @@ class _MyAppState extends State<MyApp> {
   int _questionIndex = 0;
 
   void answerQuestion(){
-
+if(_questionIndex == 1){
+  _questionIndex = -1;
+}
     setState(() {
       _questionIndex +=1;
     });

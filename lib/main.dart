@@ -25,10 +25,24 @@ class _MyAppState extends State<MyApp> {
   }
 
   final _question = [
-    {'':''},
-
-    'What\'s your favorite color ?',
-    'What\'s your favorite animal ?',
+    {
+      'questionText': 'What\'s your favorite color ?',
+      'answers': [
+        'Black',
+        'Green',
+        'Blue',
+        'Yellow',
+      ]
+    },
+    {
+      'questionText': 'What\'s your favorite animal ?',
+      'answers': [
+        'Rabbit',
+        'Tiger',
+        'Elephant',
+        'Lion',
+      ]
+    },
   ];
 
   @override

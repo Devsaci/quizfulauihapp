@@ -15,7 +15,9 @@ class _MyAppState extends State<MyApp> {
 
   void answerQuestion(){
 
-    _questionIndex +=1;
+    setState(() {
+      _questionIndex +=1;
+    });
     print( _questionIndex);
     print("answer Chosen");
   }

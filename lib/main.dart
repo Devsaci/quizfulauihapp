@@ -28,25 +28,9 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             children: [
               Question(_question[0]),
-              Answer()
-              // RaisedButton(
-              //   onPressed: () {},
-              //   child:  Text(
-              //     "Answer 35", style: TextStyle(fontSize: 25),
-              //   ),
-              //   color: Colors.red,
-              //   textColor: Colors.white,
-              //
-              // ),
-              // RaisedButton(
-              //   onPressed: () {},
-              //   child:  Text(
-              //     "Answer 36", style: TextStyle(fontSize: 25),
-              //   ),
-              //   color: Colors.red,
-              //   textColor: Colors.white,
-              //
-              // ),
+              Answer(),
+              Answer(),
+              Answer(),
             ],
           ),
         ),

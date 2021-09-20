@@ -37,7 +37,7 @@ class _MyAppState extends State<MyApp> {
         body: Container(
           child: Column(
             children: [
-              Question(_question[0]),
+              Question(_question[_questionIndex]),
               Answer( answerQuestion, "Answer 1"),
               Answer( answerQuestion, "Answer 2"),
               Answer( answerQuestion, "Answer 3"),

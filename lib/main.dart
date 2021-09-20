@@ -12,6 +12,14 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   int _questionIndex = 0;
+
+  void answerQuestion(){
+
+    _questionIndex +=1;
+    print( _questionIndex);
+    print("answer Chosen");
+  }
+
   final _question = [
     'What\'s your favorite color ?',
     'What\'s your favorite animal ?',
@@ -28,9 +36,9 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             children: [
               Question(_question[0]),
-              Answer( (){}, "Answer 1"),
-              Answer( (){}, "Answer 2"),
-              Answer( (){}, "Answer 3"),
+              Answer( answerQuestion, "Answer 1"),
+              Answer( answerQuestion, "Answer 2"),
+              Answer( answerQuestion, "Answer 3"),
             ],
           ),
         ),

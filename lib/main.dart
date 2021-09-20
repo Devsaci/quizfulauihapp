@@ -55,7 +55,7 @@ class _MyAppState extends State<MyApp> {
         body: Container(
           child: Column(
             children: [
-              Question(_question[_questionIndex]),
+              Question(_question[_questionIndex]['questionText'].toString()),
               Answer(answerQuestion, "Answer 1"),
               Answer(answerQuestion, "Answer 2"),
               Answer(answerQuestion, "Answer 3"),

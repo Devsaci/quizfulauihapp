@@ -43,6 +43,15 @@ class _MyAppState extends State<MyApp> {
         'Lion',
       ]
     },
+    {
+      'questionText': 'What\'s your favorite Language ?',
+      'answers': [
+        'JAVA',
+        'JAVASCRIPT',
+        'DART',
+        'PYTHON',
+      ]
+    },
   ];
 
   @override
@@ -60,9 +69,7 @@ class _MyAppState extends State<MyApp> {
               ...(_question[_questionIndex]['answers'] as List<String>).map((answerChosen){
                 return Answer(answerQuestion, answerChosen);
               }).toList(),
-              Answer(answerQuestion, "Answer 1"),
-              Answer(answerQuestion, "Answer 2"),
-              Answer(answerQuestion, "Answer 3"),
+
             ],
           ),
         ),

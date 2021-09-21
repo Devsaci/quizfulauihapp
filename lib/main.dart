@@ -14,9 +14,9 @@ class _MyAppState extends State<MyApp> {
   int _questionIndex = 0;
 
   void answerQuestion() {
-    if (_questionIndex == 2) {
-      _questionIndex = -1;
-    }
+    // if (_questionIndex == 2) {
+    //   _questionIndex = -1;
+    // }
     setState(() {
       _questionIndex += 1;
     });
@@ -69,7 +69,6 @@ class _MyAppState extends State<MyApp> {
               ...(_question[_questionIndex]['answers'] as List<String>).map((answerChosen){
                 return Answer(answerQuestion, answerChosen);
               }).toList(),
-
             ],
           ),
         ),

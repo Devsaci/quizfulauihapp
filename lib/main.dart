@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
 
   void _reseltQuiz() {
     setState(() {
-      _questionIndex =0;
+      _questionIndex = 0;
     });
   }
 
@@ -36,28 +36,28 @@ class _MyAppState extends State<MyApp> {
     {
       'questionText': 'What\'s your favorite color ?',
       'answers': [
-        'Black',
-        'Green',
-        'Blue',
-        'Yellow',
+        {'text': 'Black', 'score': 10},
+        {'text': 'Green', 'score': 20},
+        {'text': 'Blue', 'score': 30},
+        {'text': 'Yellow', 'score': 40},
       ]
     },
     {
       'questionText': 'What\'s your favorite animal ?',
       'answers': [
-        'Rabbit',
-        'Tiger',
-        'Elephant',
-        'Lion',
+        {'text': 'Rabbit', 'score': 10},
+        {'text': 'Tiger', 'score': 20},
+        {'text': 'Elephant', 'score': 30},
+        {'text': 'Lion', 'score': 40},
       ]
     },
     {
       'questionText': 'What\'s your favorite Language ?',
       'answers': [
-        'JAVA',
-        'JAVASCRIPT',
-        'DART',
-        'PYTHON',
+        {'text': 'JAVA', 'score': 10},
+        {'text': 'JAVASCRIPT', 'score': 20},
+        {'text': 'DART', 'score': 30},
+        {'text': 'PYTHON', 'score': 40},
       ]
     },
   ];
@@ -72,8 +72,7 @@ class _MyAppState extends State<MyApp> {
         body: Container(
             child: _questionIndex < _question.length
                 ? Quiz(_question, _questionIndex, answerQuestion)
-                : Result(_reseltQuiz)
-        ),
+                : Result(_reseltQuiz)),
       ),
     );
   }

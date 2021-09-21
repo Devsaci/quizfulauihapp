@@ -18,7 +18,7 @@ class Result extends StatelessWidget {
               fontSize: 30, color: Colors.red, fontWeight: FontWeight.bold),
         ),
         FlatButton(
-            onPressed: () {},
+            onPressed: q,
             child: const Text(
               "Restart The App",
               style: TextStyle(

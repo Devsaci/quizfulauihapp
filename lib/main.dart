@@ -65,11 +65,7 @@ class _MyAppState extends State<MyApp> {
         body: Container(
           child: _questionIndex < _question.length
               ? Quiz(_question, _questionIndex, answerQuestion)
-              : Center(
-                  child: Text(
-                  "Text",
-                  style: TextStyle(fontSize: 30, color: Colors.red),
-                )),
+              :
         ),
       ),
     );

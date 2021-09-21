@@ -1,5 +1,6 @@
 
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Result extends StatelessWidget {
@@ -7,6 +8,11 @@ class Result extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Center(
+        child: Text(
+          "Text",
+          style: TextStyle(fontSize: 30, color: Colors.red, fontWeight: FontWeight.bold),
+        )
+    );
   }
 }

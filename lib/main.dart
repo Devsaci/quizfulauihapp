@@ -62,7 +62,7 @@ class _MyAppState extends State<MyApp> {
           title: Text("Quiz App"),
         ),
         body: Container(
-          child: Column(
+          child:  _questionIndex < _question.length?    Column(
             children: [
               Question(_question[_questionIndex]['questionText'].toString()),
 
@@ -70,7 +70,7 @@ class _MyAppState extends State<MyApp> {
                 return Answer(answerQuestion, answerChosen);
               }).toList(),
             ],
-          ),
+          ): Text("Text"),
         ),
       ),
     );

@@ -2,7 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Result extends StatelessWidget {
-  // const Result({Key? key}) : super(key: key);
+  final Function() q;
+
+  Result(this.q);
 
   @override
   Widget build(BuildContext context) {
@@ -16,9 +18,7 @@ class Result extends StatelessWidget {
               fontSize: 30, color: Colors.red, fontWeight: FontWeight.bold),
         ),
         FlatButton(
-            onPressed: () {
-
-            },
+            onPressed: () {},
             child: const Text(
               "Restart The App",
               style: TextStyle(

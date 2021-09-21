@@ -9,9 +9,13 @@ class Result extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-        child: Text(
-          "Text",
-          style: TextStyle(fontSize: 30, color: Colors.red, fontWeight: FontWeight.bold),
+        child: Column(
+          children: const <Widget> [
+            Text(
+              "Text",
+              style: TextStyle(fontSize: 30, color: Colors.red, fontWeight: FontWeight.bold),
+            ),
+          ],
         )
     );
   }

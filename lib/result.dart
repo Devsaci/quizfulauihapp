@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -10,13 +8,25 @@ class Result extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
         child: Column(
-          children: const <Widget> [
-            Text(
-              "Text",
-              style: TextStyle(fontSize: 30, color: Colors.red, fontWeight: FontWeight.bold),
-            ),
-          ],
-        )
-    );
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        const Text(
+          "DONE!",
+          style: TextStyle(
+              fontSize: 30, color: Colors.red, fontWeight: FontWeight.bold),
+        ),
+        FlatButton(
+            onPressed: () {
+
+            },
+            child: const Text(
+              "Restart The App",
+              style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.deepPurple,
+                  fontWeight: FontWeight.bold),
+            ))
+      ],
+    ));
   }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quizfulauihapp/answer.dart';
 import 'package:quizfulauihapp/question.dart';
+import 'package:quizfulauihapp/quiz.dart';
 
 main() => runApp(MyApp());
 
@@ -63,7 +64,7 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Container(
           child: _questionIndex < _question.length
-              ?
+              ? Quiz(_question, _questionIndex, answerQuestion)
               : Center(
                   child: Text(
                   "Text",

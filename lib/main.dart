@@ -15,7 +15,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   int _questionIndex = 0;
 
-  void _resultQuiz() {
+  void _reseltQuiz() {
     setState(() {
       _questionIndex =0;
     });
@@ -72,7 +72,7 @@ class _MyAppState extends State<MyApp> {
         body: Container(
             child: _questionIndex < _question.length
                 ? Quiz(_question, _questionIndex, answerQuestion)
-                : Result(_resultQuiz)
+                : Result(_reseltQuiz)
         ),
       ),
     );

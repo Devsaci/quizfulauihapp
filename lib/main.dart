@@ -62,15 +62,22 @@ class _MyAppState extends State<MyApp> {
           title: Text("Quiz App"),
         ),
         body: Container(
-          child:  _questionIndex < _question.length?    Column(
-            children: [
-              Question(_question[_questionIndex]['questionText'].toString()),
-
-              ...(_question[_questionIndex]['answers'] as List<String>).map((answerChosen){
-                return Answer(answerQuestion, answerChosen);
-              }).toList(),
-            ],
-          ): Text("Text"),
+          child: _questionIndex < _question.length
+              ? Column(
+                  children: [
+                    Question(
+                        _question[_questionIndex]['questionText'].toString()),
+                    ...(_question[_questionIndex]['answers'] as List<String>)
+                        .map((answerChosen) {
+                      return Answer(answerQuestion, answerChosen);
+                    }).toList(),
+                  ],
+                )
+              : Center(
+                  child: Text(
+                  "Text",
+                  style: TextStyle(fontSize: 30, color: Colors.red),
+                )),
         ),
       ),
     );

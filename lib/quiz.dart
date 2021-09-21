@@ -5,15 +5,19 @@ import 'package:quizfulauihapp/question.dart';
 import 'answer.dart';
 
 class Quiz extends StatelessWidget {
-  // const Quiz({Key? key}) : super(key: key);
+ final List<Map<String, Object>> question;
+ final int questionIndex;
+ final Function() answerQuestion;
+
+ Quiz(this.question, this.questionIndex, this.answerQuestion);
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
         Question(
-            _question[_questionIndex]['questionText'].toString()),
-        ...(_question[_questionIndex]['answers'] as List<String>)
+            question[questionIndex]['questionText'].toString()),
+        ...(question[questionIndex]['answers'] as List<String>)
             .map((answerChosen) {
           return Answer(answerQuestion, answerChosen);
         }).toList(),

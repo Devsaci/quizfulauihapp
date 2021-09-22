@@ -7,10 +7,16 @@ class Result extends StatelessWidget {
 
   Result(this.q, this.resultScore);
 
-  String get resultPhrase{
+  String get resultPhrase {
     String resultText;
 
-
+    if (resultScore >= 70) {
+      resultText = "Your are Awesome";
+    } else if (resultScore >= 40) {
+      resultText = "Pretty likable";
+    } else {
+      resultText = "Your are so bad";
+    }
     return resultText;
   }
 

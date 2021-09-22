@@ -27,6 +27,9 @@ class _MyAppState extends State<MyApp> {
       _questionIndex += 1;
       // _totalScore;
     });
+    print("index question :  $_questionIndex");
+    print("score  =  $_totalScore");
+    print("answer Chosen");
   }
 
   final List<Map<String, Object>> _question = [
@@ -67,9 +70,9 @@ class _MyAppState extends State<MyApp> {
           title: Text("Quiz App"),
         ),
         body: Container(
-          child: _questionIndex < _question.length
-              ? Quiz(_question, _questionIndex, answerQuestion)
-              : Result(_reseltQuiz, _totalScore),
+            child: _questionIndex < _question.length
+                ? Quiz(_question, _questionIndex, answerQuestion)
+                : Result(_reseltQuiz, _totalScore),
         ),
       ),
     );

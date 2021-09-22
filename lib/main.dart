@@ -13,8 +13,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
-  int _totalScore =0;
+  int _totalScore = 0;
   int _questionIndex = 0;
 
   void _reseltQuiz() {
@@ -23,11 +22,11 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
-  void answerQuestion(int score) {
-_totalScore += score;
+  void answerQuestion(score) {
+    _totalScore += score;
     setState(() {
       _questionIndex += 1;
-      _totalScore =0;
+      _totalScore = 0;
     });
     print(_questionIndex);
     print("answer Chosen");

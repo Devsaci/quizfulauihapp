@@ -3,8 +3,16 @@ import 'package:flutter/material.dart';
 
 class Result extends StatelessWidget {
   final Function() q;
-final int resultScore;
-  Result(this.q,this.resultScore);
+  final int resultScore;
+
+  Result(this.q, this.resultScore);
+
+  String get resultPhrase{
+    String resultText;
+
+
+    return resultText;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +20,7 @@ final int resultScore;
         child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-       Text(
+        Text(
           "your Score is : $resultScore",
           style: TextStyle(
               fontSize: 30, color: Colors.red, fontWeight: FontWeight.bold),

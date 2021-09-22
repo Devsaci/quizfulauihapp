@@ -1,7 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:quizfulauihapp/answer.dart';
-import 'package:quizfulauihapp/question.dart';
 import 'package:quizfulauihapp/quiz.dart';
 import 'package:quizfulauihapp/result.dart';
 
@@ -19,6 +17,7 @@ class _MyAppState extends State<MyApp> {
   void _reseltQuiz() {
     setState(() {
       _questionIndex = 0;
+      _totalScore = 0;
     });
   }
 
@@ -26,9 +25,10 @@ class _MyAppState extends State<MyApp> {
     _totalScore += score;
     setState(() {
       _questionIndex += 1;
-      _totalScore = 0;
+      _totalScore;
     });
-    print(_questionIndex);
+    print("index question :  $_questionIndex");
+    print("score  =  $_totalScore");
     print("answer Chosen");
   }
 

@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -29,7 +27,7 @@ class Result extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Text(
-        resultPhrase,
+          resultPhrase,
           style: TextStyle(
               fontSize: 30, color: Colors.red, fontWeight: FontWeight.bold),
         ),

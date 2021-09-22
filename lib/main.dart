@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
     _totalScore += score;
     setState(() {
       _questionIndex += 1;
-      _totalScore;
+      // _totalScore;
     });
     print("index question :  $_questionIndex");
     print("score  =  $_totalScore");
@@ -72,7 +72,8 @@ class _MyAppState extends State<MyApp> {
         body: Container(
             child: _questionIndex < _question.length
                 ? Quiz(_question, _questionIndex, answerQuestion)
-                : Result(_reseltQuiz)),
+                : Result(_reseltQuiz, _totalScore),
+        ),
       ),
     );
   }

@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -26,6 +28,11 @@ class Result extends StatelessWidget {
         child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
+        Text(
+        resultPhrase,
+          style: TextStyle(
+              fontSize: 30, color: Colors.red, fontWeight: FontWeight.bold),
+        ),
         Text(
           "your Score is : $resultScore",
           style: TextStyle(

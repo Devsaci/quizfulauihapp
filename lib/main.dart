@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quizfulauihapp/quiz.dart';
@@ -11,9 +13,9 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  Color w= Colors.white;
-  Color b= Colors.black;
-
+  Color w = Colors.white;
+  Color b = Colors.black;
+  bool isSwitched = false;
 
   int _totalScore = 0;
   int _questionIndex = 0;
@@ -71,18 +73,20 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          actions: <Widget> [
+          actions: <Widget>[
+            Switch(
+                value: isSwitched,
+                onChanged: (Value) {
 
-
+                }),
           ],
           title: Text("Quiz App"),
         ),
         body: Container(
-
           color: w,
-            child: _questionIndex < _question.length
-                ? Quiz(_question, _questionIndex, answerQuestion)
-                : Result(_reseltQuiz, _totalScore),
+          child: _questionIndex < _question.length
+              ? Quiz(_question, _questionIndex, answerQuestion)
+              : Result(_reseltQuiz, _totalScore),
         ),
       ),
     );

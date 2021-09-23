@@ -77,7 +77,10 @@ class _MyAppState extends State<MyApp> {
             Switch(
                 value: isSwitched,
                 onChanged: (Value) {
-
+                  setState(() {
+                    isSwitched = Value;
+                    print(isSwitched);
+                  });
                 }),
           ],
           title: Text("Quiz App"),

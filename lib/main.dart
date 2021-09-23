@@ -71,6 +71,10 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
+          actions: <Widget> [
+
+
+          ],
           title: Text("Quiz App"),
         ),
         body: Container(

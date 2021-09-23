@@ -74,6 +74,8 @@ class _MyAppState extends State<MyApp> {
           title: Text("Quiz App"),
         ),
         body: Container(
+
+          color: w,
             child: _questionIndex < _question.length
                 ? Quiz(_question, _questionIndex, answerQuestion)
                 : Result(_reseltQuiz, _totalScore),

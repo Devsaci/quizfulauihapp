@@ -11,6 +11,10 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  Color w= Colors.white;
+  Color b= Colors.black;
+
+
   int _totalScore = 0;
   int _questionIndex = 0;
 
